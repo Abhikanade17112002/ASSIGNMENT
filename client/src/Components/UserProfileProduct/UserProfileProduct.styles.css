@@ -1,0 +1,142 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.user-profile-product-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #c7c7c768;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    height: 300px;   
+    font-size: small;
+   
+}
+
+.user-profile-product-card:hover {
+    transform: translateY(-10px);
+    background-color: #a7a7a7af;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.user-profile-product-image {
+ 
+ 
+    padding: 0.5rem;
+    width: 250px;
+    height: 100%;
+ 
+
+}
+
+.user-profile-product-image img{
+  width: 100%;
+ height: 100%;
+border-radius: 8px;
+}
+
+.user-profile-product-info {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-block: 1rem;
+    padding-inline: 0.5rem;
+    height: 100%;
+}
+.user-profile-product-details {
+    display: flex;
+    justify-content: space-evenly;
+   
+    flex-direction: column;
+   height: 70%;
+}
+.user-profile-product-details p {
+    margin-bottom: 5px;
+    color: #555;
+    line-height: 1;
+}
+
+.user-profile-product-details p strong {
+    color: #333;
+}
+
+.user-profile-product-actions {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   height: 50%;
+    gap: 2px;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 40px;
+   width: 50px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .user-profile-product-card {
+        flex-direction: column;
+        align-items: stretch;
+        width: 60%;
+        height: 100%;
+    }
+    .user-profile-product-image {
+        width: 100%;
+    
+    }
+    .user-profile-product-info {
+        width: 100%;
+    
+    }
+
+  
+
+    .user-profile-product-actions {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}

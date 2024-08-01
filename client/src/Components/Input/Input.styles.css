@@ -1,0 +1,17 @@
+.input-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-block: 0.5rem;
+}
+.error-message{
+    display:none;
+}
+input:invalid[focused="true"]{
+    border: 2px solid brown;
+    
+} 
+input:invalid[focused="true"] ~span{
+    display: block;
+    color: brown;
+} 

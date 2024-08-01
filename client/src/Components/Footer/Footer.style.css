@@ -1,0 +1,112 @@
+
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+  background-color: #f1f1f1;
+  border-top: 1px solid #ddd;
+
+}
+
+.footer-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1 20%;
+  margin: 20px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.footer-section ul {
+  
+  list-style: none;
+  width: 31%;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+    color: #666;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+   
+}
+
+.footer-section .social-links {
+  display: flex;
+  justify-content: flex-start;
+  width: 25%;
+  margin-top: 10px;
+}
+
+.footer-section .social-links li {
+  width: 25%;
+  margin-right: 15px;
+}
+
+
+.footer-section .social-links i {
+  font-size: 20px;
+  width: 25%;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section .social-links i:hover {
+    color: #666;
+    cursor: pointer;
+}
+
+.footer-section .contact-links {
+  margin-top: 20px;
+  width: 25%;
+}
+
+.footer-section .contact-links li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.footer-section .contact-links li:hover {
+  color: #666;
+}
+
+.footer-copyright {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #666;
+  border-top: 1px solid #ddd;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-section .social-links {
+    justify-content: center;
+  }
+}

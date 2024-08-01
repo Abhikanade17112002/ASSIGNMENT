@@ -1,0 +1,12 @@
+.user-products-container{
+    margin-block: 2rem;
+    
+    width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 1rem;
+   justify-content: space-between;
+   align-items: center;
+}
+

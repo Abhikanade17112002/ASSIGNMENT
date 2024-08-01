@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-container {
+    width: 90%;
+    margin-inline: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-left{
+    width: 10%;
+}
+.navbar-right{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80%;
+}
+.navlogo {
+    width: 100%;
+    height: 100%;
+}
+
+.navlogo:hover {
+    cursor: pointer;
+}
+
+.navlogo svg {
+    width: 100%;
+    height: 8vh;
+    
+}
+
+.searchbar-container {
+    width: 55%;
+    height: 5vh;
+    display: flex;
+
+}
+
+.searchbar-container input {
+    outline: 0px;
+    border: 0px;
+    padding: 0px 0.7rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    font-size: medium;
+    width: 80%;
+    display: flex;
+
+}
+
+.search-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    background-color:#e3ad42;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.navlinks-container {
+    width: 60%;
+    height: 5vh;
+    display: flex;
+}
+
+.navlinks-container ul {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100%;
+    display: flex;
+}
+
+.navlinks-container ul li,
+.navlinks-container ul li a {
+    width: 100%;
+    font-size: small;
+    align-items: center;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navlinks-container ul li a:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+
+.user-image {
+    height: 40px;
+    width: 40px;
+    background-color: azure;
+    border-radius: 50%;
+    overflow: hidden;
+    object-position: center;
+    object-fit: contain;
+
+
+}
+.cart-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    transform: scale(1.5);
+
+}
+
+.user-image :hover {
+    cursor: pointer;
+    background-blend-mode: color-burn;
+
+}
+
+.user-image img {
+    width: 100%;
+    height: 100%;
+
+
+}
